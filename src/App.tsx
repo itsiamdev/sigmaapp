@@ -468,10 +468,10 @@ export default function App() {
   );
 }
 
-function NavItem({ icon, label, active = false, color = "text-gray-500" }: { icon: React.ReactNode, label: string, active?: boolean, color?: string }) {
+function NavItem({ icon, label, active = false, color = "text-gray-500" }: { icon: React.ReactElement<{ className?: string }>, label: string, active?: boolean, color?: string }) {
   return (
     <div className={`flex items-center gap-3 px-3 py-2.5 rounded-lg cursor-pointer transition-colors group ${active ? 'bg-blue-50 text-blue-600' : `hover:bg-gray-100 hover:text-gray-900 ${color}`}`}>
-      {React.cloneElement(icon as React.ReactElement, { className: `h-5 w-5 ${active ? 'text-blue-600' : 'group-hover:text-gray-700'}` })}
+      {React.cloneElement(icon, { className: `h-5 w-5 ${active ? 'text-blue-600' : 'group-hover:text-gray-700'}` })}
       <span className="font-bold text-sm">{label}</span>
     </div>
   );
