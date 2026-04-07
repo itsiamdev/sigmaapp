@@ -2,7 +2,7 @@
 
 🔗 **Live Demo**: [https://itsiamdev.github.io/sigmaapp/](https://itsiamdev.github.io/sigmaapp/)
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 A modern web application built with React, TypeScript, and Vite. This project uses shadcn/ui components for a clean, accessible, and customizable UI.
 
